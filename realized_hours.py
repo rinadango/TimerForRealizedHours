@@ -19,7 +19,7 @@ while True:
 
     input("Press Enter to continue and Enter again to exit the stopwatch")
     start_time=time.time()
-    print("Stopwatch has started")
+    print("Timer is runing")
 
     data = [shortDate,project_name]
 

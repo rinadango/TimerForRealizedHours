@@ -6,7 +6,7 @@ from csv import writer
 # Does the CSV file exist??
 file_csv = input("Create a new CSV file? 1 - Yes, 0 - No: ")
 if file_csv == '1':
-    columns = ['DATE','Project name', 'Time']
+    columns = ['DATE','Project name', 'Time', 'Unit']
     df = pd.DataFrame(columns = columns)  
     df.to_csv('Realized_hours.csv', index=False)
 elif file_csv == '0':
@@ -34,18 +34,21 @@ while True:
         if time_sec <= 60:
             print("The time elapsed:",time_sec,'secs')
             data.append(time_sec)
+            data.append('sec(s)')
         elif 60 < time_sec <= 3600:
             print("The time elapsed:",time_mins,'mins')
             data.append(time_mins)
+            data.append('min(s)')
         elif time_sec > 3600:
             print("The time elapsed:",time_hours,'hours')
             data.append(time_hours)
+            data.append('hour(s)')
     #print(df)
     break
 
 print(data)
 
-df1 = pd.DataFrame(columns=['DATE','Project name', 'Time']) 
+df1 = pd.DataFrame(columns=['DATE','Project name', 'Time', 'Unit']) 
 #writer = pd.ExcelWriter('Realized_hours.xlsx')
 df1_length = len(df1)
 df1.loc[df1_length] = data

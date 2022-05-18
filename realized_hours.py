@@ -55,18 +55,3 @@ df1.loc[df1_length] = data
 print(df1)
 #df.to_excel("Realized_hours.xlsx")
 df1.to_csv('Realized_hours.csv', mode='a', index=False, header=None)
-
-
-'''
-with open('Realized_hours.csv', 'a+', newline='') as my_new_csv_file:
-   # Pass this file object to csv.writer()
-    # and get a writer object
-    writer_object = writer(my_new_csv_file)
-  
-    # Pass the list as an argument into
-    # the writerow()
-    writer_object.writerow(data)
-  
-    #Close the file object
-    my_new_csv_file.close()
-'''

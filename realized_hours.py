@@ -48,6 +48,7 @@ while True:
 
 #print(data)
 
+
 df1 = pd.DataFrame(columns=['DATE','Project name', 'Time', 'Unit']) 
 #writer = pd.ExcelWriter('Realized_hours.xlsx')
 df1_length = len(df1)

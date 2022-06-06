@@ -1,8 +1,9 @@
 /Realized_hours.csv
 /test.py
 /add_lib.py
+/calendar_clock_schedule_icon-icons.com_51085.ico
+/realized_hours.spec
 build/
 dist/
 __pycache__/
-/calendar_clock_schedule_icon-icons.com_51085.ico
-/realized_hours.spec
+

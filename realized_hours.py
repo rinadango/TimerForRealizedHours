@@ -14,11 +14,11 @@ elif file_csv == '0':
     pass
 
 shortDate = datetime.today().strftime('%Y-%m-%d')
-project_name = input("Enter project name: ")
+project_name = input("ENTER project name: ")
 
 while True:
 
-    input("Press Enter to continue and Enter again to exit the TIMER")
+    input("Press ENTER to continue and ENTER again to exit the TIMER")
     start_time=time.time()
     print("Timer is running")
 
@@ -56,6 +56,6 @@ print(df1)
 #df.to_excel("Realized_hours.xlsx")
 df1.to_csv('Realized_hours.csv', mode='a', index=False, header=None)
 
-print('\n DONE')
+print('\n DONE. Press ENTER to exit.')
 if input() == '':
     sys.exit()

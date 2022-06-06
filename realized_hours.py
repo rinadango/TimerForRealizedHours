@@ -17,7 +17,7 @@ project_name = input("Enter project name: ")
 
 while True:
 
-    input("Press Enter to continue and Enter again to exit the TIME")
+    input("Press Enter to continue and Enter again to exit the TIMER")
     start_time=time.time()
     print("Timer is running")
 

@@ -56,6 +56,6 @@ print(df1)
 #df.to_excel("Realized_hours.xlsx")
 df1.to_csv('Realized_hours.csv', mode='a', index=False, header=None)
 
-print('To EXIT press 1')
-if input() == '1':
+print('\n DONE')
+if input() == '':
     sys.exit()

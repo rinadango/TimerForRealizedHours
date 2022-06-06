@@ -1,2 +1,7 @@
 /Realized_hours.csv
 /test.py
+/add_lib.py
+build/
+dist/
+__pycache__/
+/calendar_clock_schedule_icon-icons.com_51085.ico

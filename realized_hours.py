@@ -2,6 +2,7 @@ import time
 import pandas as pd
 from datetime import datetime
 from csv import writer
+import sys
 
 # Does the CSV file exist??
 file_csv = input("Create a new CSV file? 1 - Yes, 0 - No: ")
@@ -48,7 +49,6 @@ while True:
 
 #print(data)
 
-
 df1 = pd.DataFrame(columns=['DATE','Project name', 'Time', 'Unit']) 
 #writer = pd.ExcelWriter('Realized_hours.xlsx')
 df1_length = len(df1)
@@ -56,3 +56,7 @@ df1.loc[df1_length] = data
 print(df1)
 #df.to_excel("Realized_hours.xlsx")
 df1.to_csv('Realized_hours.csv', mode='a', index=False, header=None)
+
+print('To EXIT press 1')
+if input() == '1':
+    sys.exit()

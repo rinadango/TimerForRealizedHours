@@ -38,11 +38,11 @@ def realized_h():
                 print("The time elapsed:",time_sec,'secs')
                 data.append(time_sec)
                 data.append('sec(s)')
-            elif 60 < time_sec <= 3600:
+            elif 60 < time_sec < 3600:
                 print("The time elapsed:",time_mins,'mins')
                 data.append(time_mins)
                 data.append('min(s)')
-            elif time_sec > 3600:
+            elif time_sec >= 3600:
                 print("The time elapsed:",time_hours,'hours')
                 data.append(time_hours)
                 data.append('hour(s)')

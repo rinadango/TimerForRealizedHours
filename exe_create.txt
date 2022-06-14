@@ -1,0 +1,3 @@
+#!/bin/sh
+
+pyinstaller --icon=calendar_clock_schedule_icon-icons.ico realized_hours.py

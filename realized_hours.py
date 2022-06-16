@@ -13,6 +13,8 @@ def realized_h():
         df.to_csv('Realized_hours.csv', index=False)
     elif file_csv == '0':
         pass
+    else:
+        sys.exit()
 
     shortDate = datetime.today().strftime('%Y-%m-%d')
     project_name = input("ENTER project name: ")
@@ -57,11 +59,14 @@ def realized_h():
     print(df1)
     #df.to_excel("Realized_hours.xlsx")
     df1.to_csv('Realized_hours.csv', mode='a', index=False, header=None)
+    print('\n DONE. Type 2 to restart. Press X+ENTER to exit.')
 
 realized_h()
 
-print('\n DONE. Press ENTER to restart. Press X+ENTER to exit.')
-if input() == '':
+while input() == '2':
     realized_h()
-if input() == 'X'.casefold():
+else:
     sys.exit()
+    
+#if input() == 'X'.casefold():
+        #sys.exit()

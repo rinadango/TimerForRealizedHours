@@ -14,6 +14,7 @@ def realized_h():
     elif file_csv == '0':
         pass
     else:
+        print("WRONG INPUT > EXITING")
         sys.exit()
 
     shortDate = datetime.today().strftime('%Y-%m-%d')

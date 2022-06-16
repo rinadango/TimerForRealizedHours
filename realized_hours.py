@@ -59,7 +59,7 @@ def realized_h():
     print(df1)
     #df.to_excel("Realized_hours.xlsx")
     df1.to_csv('Realized_hours.csv', mode='a', index=False, header=None)
-    print('\n DONE. Type 2 to restart. Press X+ENTER to exit.')
+    print('\n DONE. Type 2 to restart. Press ENTER to exit.')
 
 realized_h()
 
@@ -68,5 +68,6 @@ while input() == '2':
 else:
     sys.exit()
     
+# Below for later maybe
 #if input() == 'X'.casefold():
         #sys.exit()
